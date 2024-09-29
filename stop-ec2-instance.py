@@ -2,10 +2,10 @@ import boto3
 
 def lambda_handler(event, context):
     # Initialize the EC2 client
-    ec2_client = boto3.client('ec2', region_name='ap-south-1') # Replace your Region name
+    ec2_client = boto3.client('ec2', region_name='us-east-2') # Replace your Region name
 
     # Specify the instance ID of the EC2 instance you want to stop
-    instance_id = 'i-051262059d6f6350a' # Replace your Own Instance ID
+    instance_id = 'i-05acf9828feb30f4b' # Replace your Own Instance ID
 
     # Stop the EC2 instance
     try:
